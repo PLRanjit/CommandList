@@ -1,0 +1,93 @@
+Git
+
+git config --global user.name "<user_name>"
+git config --global user.email "<user_email>"
+
+git config --list
+
+#Move to the folder whose back up is needed to take
+git init
+
+#tO ADD THE File to staging area for commit
+git add <filename> or 	//to add file 1 by 1
+git add -A				//to add all the file 
+git add .				// to add all files 1st time
+
+#to commit 1st time
+git commit -m "initial commit"		//-m == message
+
+#create remote git repository first time
+git remote add origin <remote_repository_URL>
+eg: git remote add origin https://github.com/<User_githubname>/<repository_name>.git
+
+#to verify the path
+git remote -v
+
+#And if we dont want it to back up any more we just have to remove the .git file created in the folder
+rm -rf .git			//for mac
+
+#to ignore few files from project
+touch .gitignore	//for mac
+#edit the file add the file names to be ignore init
+
+#to remove file from staging area
+git reset <filename> 	//to remove file 1 by 1
+git reset 				//to remove all file
+
+#to get the current proccess log file
+git log 	//show all the details of current proccess
+
+#to work on the project which is on git we have to clone it on our system
+git clone <git_url> <system_Path_to_clone>
+eg:- . means current folder
+git clone https://github.com/abc . 
+
+#to view details of remote repository
+git remote -v or
+git branch -a		//branchess
+
+#to see the modification in the file
+git diff
+git status
+git add -A
+git commit -m "<message>" 
+
+#this will pull the chnages made after our last pull time
+git pull origin master
+
+#to push the changes back to the remote place
+git push origin master
+
+#want to create make branch or want to work with single file
+git branch <branch_name>
+
+#to list the branchess
+git branch
+
+#to work with the branch 
+git checkout <branch_name>
+
+#make the chnages it wont effect any of the other branches or file
+git commit
+
+#to push the chnages to the branch
+git push -u origin <branch_name>
+
+
+#after making all the chnages time to merger the branchess it will show the merged branches
+git branch --merged
+
+#to merge the branch into master
+git merge <branch_name>
+
+#after merging push the chnages
+git push origin master
+
+#to delete the branch
+git branch -d <branch_name>
+
+#to remove the branch from remote directory
+git push origin --delete <branch_nAME>
+
+https://www.youtube.com/watch?v=HVsySz-h9r4
+https://www.youtube.com/watch?v=8Qcqh0jl5YU&t=438s
