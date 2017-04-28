@@ -1,3 +1,7 @@
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+https://www.youtube.com/watch?v=HVsySz-h9r4
+https://www.youtube.com/watch?v=8Qcqh0jl5YU&t=438s
+
 Git
 
 git config --global user.name "<user_name>"
@@ -88,6 +92,3 @@ git branch -d <branch_name>
 
 #to remove the branch from remote directory
 git push origin --delete <branch_nAME>
-
-https://www.youtube.com/watch?v=HVsySz-h9r4
-https://www.youtube.com/watch?v=8Qcqh0jl5YU&t=438s
