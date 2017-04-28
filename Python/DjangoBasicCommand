@@ -1,0 +1,16 @@
+#Create A Project
+python stratproject <project_name>
+
+#Run Server Deafult run on http://127.0.0.1:8000
+python manage.py runserver
+
+#create app in a project
+python manage.py startapp <app_name>
+
+#For making migration if need
+python manage.py makemigration
+python manage.py sqlmigrate <model_name> <sql_created_id>
+python manage.py migrate
+
+#create crediantials for the admin
+python manage.py createsuperuser
