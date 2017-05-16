@@ -15,3 +15,22 @@ cat /proc/<proccessIdOfTheCFileName>/maps
 cat /proc/sys/kernel/randomize_va_space     --- Off the virtual memory randomization in linux kernel2.6 and above
 
 echo 0 > /proc/sys/kernel/randomize_va_space
+
+gdb ./<CFileName>   --add file to gdb
+
+(gdb)  list 1    --start reading the source from the mentioned line number over here it's line no 1
+
+(gdb)  run <arg1, arg2, ...> 
+
+(gdb) disassemble <nameOfTheFunctionTodisasemble>     --it will convert the code of that function too assembley language
+
+(gdb) break <lineNo>      --to enter the break point in code
+
+(gdb) info register       --provide details of all register
+
+(gdb) help x
+
+(gdb) x/10xw <Address>    --esp aur other register address
+
+(gdb)continue         --to overcome the breakpoint
+
