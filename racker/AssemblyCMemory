@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=aoEEH2EJdVY
+
+gcc - ggdb -o <CFileName> <CFileNameWithItsExtension>
+
+run the program ./<CFileName> <agr1, agr2, ...>
+
+ps -aux | grep <CFileName>    --provides process id
+
+ls /proc  --holds all run time info of all proccess and all the things happening
+
+cat /proc/<proccessIdOfTheCFileName>
+
+cat /proc/<proccessIdOfTheCFileName>/maps
+
+cat /proc/sys/kernel/randomize_va_space     --- Off the virtual memory randomization in linux kernel2.6 and above
+
+echo 0 > /proc/sys/kernel/randomize_va_space
