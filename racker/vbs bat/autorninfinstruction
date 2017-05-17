@@ -1,0 +1,3 @@
+Put this ‘autorun.inf’ and your actual batch virus ‘anything.bat’ in pendrive .
+
+When the victim would plug in pen drive,the autorun.inf will launch anything.bat and commands in batch file virus would execute.
