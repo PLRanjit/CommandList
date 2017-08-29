@@ -1,0 +1,26 @@
+install nodejs fom it's website.
+
+After installig verify the nodejs is installed properly or not
+#node -v
+
+To start a project just initialize the nodejs it will ask bunch of question just answer them all question are not mandatory.
+it will ask for the index file name SAY 'index.js'
+#npm init
+
+To install express for nodejs
+#npm install --save express
+
+To install express handlerbar
+#npm install --save express-handlebars
+
+Now verify the 'index.js' the file which we have created by 'npm init' command
+- 'express' is imported or not { require('express') }
+- intialize it { express() }
+- set the port { process.env.PORT || <port_number>}
+- define/get the root('/') if user is in the root folder set the request and response via { response.send(<response/page>) }
+- set the listener { app.listen(<function and followedd command>) }
+
+Video
+- https://www.youtube.com/watch?v=xDCKcNBFsuI
+Sample Code
+- http://www.newthinktank.com/2015/11/express-nodejs-tutorial/
